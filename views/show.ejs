@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> store Show</title>
+  </head>
+  <body>
+    <h1>store Show Page</h1>
+   <h2><a href="/store">Back to Index</a></h2>
+    <h3> <%= storeID.name %> </h3>
+    <img src="<%= storeID.img%>">
+
+    <h3>Description: <%=storeID.description%></h3>
+    <h4>Price : <%=storeID.price%></h4>
+    <h4>Total : <%=storeID.qty%></h4>
+
+
+
+
+
+   
+    
+    <form action="/store/<%= storeID.id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE"/>
+      </form>
+
+
+   
+        <a href="/store/<%= storeID.id %>/edit">Edit</a>
+
+<!-- buy -->
+
+      <form action="/store/<%= storeID.id%>/buy?_method=PUT" method="POST">
+              <input type="submit" value="BUY"/>
+</form>
+
+
+      
+
+
+      
+
+
+       
+  </body>
+</html>
+    
+</body>
+</html>
