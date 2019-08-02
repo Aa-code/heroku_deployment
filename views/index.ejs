@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hair organic</title>
+
 </head>
 <body>
     <nav>
 
-            <a href="/Store/new">Create a Product</a>
+            <a href="/Store/new"> Add product!</a>
             
     </nav>
-    <h1>Store</h1>
-    <% for (let i = 0; i < storeKey.length; i++){%>
-        <a href = "/store/<%= storeKey[i].id%>"><%=storeKey[i].name%></a> 
-        <img src="<%= storeKey[i].img%>">
-        
-    <%}%>
+    <h1>Organic Hair Products</h1>
+
+    <main>
+
+        <% for (let i = 0; i < storeKey.length; i++){%>
+            <div class= card
+            <a href = "/store/<%= storeKey[i].id%>"><%=storeKey[i].name%></a> 
+            <img src="<%= storeKey[i].img%>">
+        </div>
+        <%}%>
+
+    </main>
+   
     
 </body>
 </html>

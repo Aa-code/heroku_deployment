@@ -10,7 +10,8 @@
         <form action="/store/<%=Product.id%>?_method=PUT" method="POST">
     	
     		Name: <input type="text" name="name" value="<%=Product.name%>"/><br/>
-    		price: <input type="text" name="price" value="<%=Product.price%>"/><br/>
+            price: <input type="text" name="price" value="<%=Product.price%>"/><br/>
+            Description<input type="text" name="description" value="<%=Product.description%>"/><br/>
             qty: <input type="text" name="qty" value="<%=Product.qty%>"/> <br/>
             Add Image: <input type="text" name="img" value="<%Product.img%>"/><br/>
             <input type="submit" name="" value="Submit Changes"/>
