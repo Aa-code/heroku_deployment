@@ -10,7 +10,7 @@ router.get('/seed', async (req, res) => {
     const newProducts =
       [
         {
-          name: 'MANUKA HONEY & YOGURT HYDRATE + REPAIR PROTEIN-STRONG TREATMENT 8OZ',
+          name: 'Manuka Honey & Yogurt HYDRATE + REPAIR PROTEIN-STRONG TREATMENT 8OZ',
           description: 'a nutrientrich strengthening cream to naturally reinforce and revitalize over-processed, abused hair fibers. Certified organic Shea Butter, ultra-moisturizing Manuka Honey and Yogurt in a deep conditioning formula that fortifies weak strands.',
           img: 'https://www.sheamoisture.com/dw/image/v2/BDFL_PRD/on/demandware.static/-/Sites-sundial-master-catalog/default/dwc3e2c497/large/sheamoisture/764302231479_image%204.jpg?sw=560&sh=560&sm=cut',
           price: 5,
@@ -149,7 +149,7 @@ router.put('/:id/buy', (req, res)=> {
         if (err) {
             console.log(err)
         }else {
-            res.redirect(`//${req.params.id}`)
+            res.redirect(`/store/${req.params.id}`)
         }
     })
 

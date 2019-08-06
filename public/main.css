@@ -1,54 +1,106 @@
 
 
-
-nav {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-}
-
+/* the whole nav */
+/* nav {
+    
+} */
+/* the text link in the bav bar */
 nav a {
     color: black;
-    margin: 45px;
+    margin: 25px;
+     
+
     
 }
+/* this is the navbar spacing in it */
 nav .navbar-brand {
-    font-size: 4.25rem;
+ font-size: 1.25rem;
+ padding: 5px;
+
+
+}
+
+nav h1 {
+     /* font-family: 'Bubblegum Sans', cursive; */
+     color: beige;
+     font-family: 'Rock Salt', cursive;
+   
 }
 
 
-
+/* this grabs the background */
 body {
     background-color:rosybrown;
 }
 
-
+/* this grabs the card */
 main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 100px;
     
 }
+
+
+
 .card {
-width: 400px;
-height: 400px;
-margin-bottom: 45px;
-border-radius: 30px;
+width: 300px;
+height: 300px;
+padding: 10px;
+box-shadow: 30px 40px 30px 0 rgba(0,0,0,0.5);
+/* transition: 0.3s; */
+/* border-radius: 0px; */
 
 
 }
 .card img {
     width: 100%;
-    height: 320px;
-    border-radius: 30px;
+    height: 200px;
    
+  
 
 
 }
 .card a {
 color: black;
-font-size: 15px;
+font-size: 20px;
+
 }
 
-h1 {
-    line-height: 100px;
+
+  
+  /* /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0px 60px 70px 0 rgba(119, 100, 45, 0.993);
+  }
+  
+  /* Add some padding inside the card container */
+  /* .container {
+    padding: 2px 16px;
+  } */ 
+
+  header img {
+      width: 100%;
+      height: 400px;
+      
+  }
+
+header {
+    background-image: url("https://uploads.dailyvanity.sg/wp-content/uploads/2018/05/hair-commercial-ads-1.jpg");
+    background-size: cover;
+    height: 400px; 
 }
+  
+  .navbar {
+        background-color: rgba(49, 175, 184, 0.123);
+       
+    
+  }
+
+/* struggling to move card */
+  .lastcard{
+padding: 30px;
+width: 100%;
+
+  }

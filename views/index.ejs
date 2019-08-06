@@ -6,26 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hair organic</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Rock+Salt|Rubik+Mono+One|Saira+Stencil+One&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href= "../main.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-           
-            <a class="navbar-brand mb-0 h1" href="/Store/new"> Add product!</a>
+    <header>
+     
+        <nav class="navbar navbar-dark  ">
             
+            <h1>OG</h1>
+            
+            <a href="/Store/new"> 
+                <button 
+                type="button" class="navbar-brand mb-0 h1  btn btn-secondary">
+                Add product!
+                
+            </button>
+        </a>
+        
     </nav>
-    <h1>Organic Hair Products</h1>
-   
+</header>
+
     <main>
         <% for (let i = 0; i < storeKey.length; i++){%>
-            <div class="card"> 
+            <div class="card mt-5"> 
                     <img src="<%= storeKey[i].img%>">
-                <a href = "/store/<%= storeKey[i].id%>" ><%=storeKey[i].name%></a> 
-                
+
+                     <a  href = "/store/<%= storeKey[i].id%>"><%=storeKey[i].name%></a> 
             </div>
+           
         <%}%>
     </main>
+    
+    <article>
+
+
+            <div class="card text-white bg-dark mb-3 lastcard">
+                    <div class="card-header">About</div>
+                    <div class="card-body">
+                      <h5 class="card-title">What to do!</h5>
+                      <p class="card-text">Welcome! This page is all about sharing organic products. Share your favorite organic hair products or facial products! </p>
+                    </div>
+  
+
+
+
+
+    </article>
    
     
 </body>
