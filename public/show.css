@@ -1,6 +1,6 @@
 
 main img{
- width: 30%;
+ width: 44%;
  border-radius: 10px;
  padding:1px;
  border:1px solid #021a40;
@@ -47,3 +47,20 @@ main img{
               font-size: 30px;
           }
 
+ 
+          .progress {
+            height: 40px;
+            margin-left: 40px;     
+              }
+              h5 {
+                   font-size: 30px;
+              }
+              h4 {
+                color: #2F3C7E;
+                font-family:'Noto Serif',serif;
+                text-align: center;
+                padding: 30px;
+                font-size: 20px;
+
+              }
+   
