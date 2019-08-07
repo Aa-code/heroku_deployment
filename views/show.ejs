@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title> store Show</title>
+      <% include ./partials/head.ejs %>
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href= "../show.css">
   </head>
   <body>
+      <% include ./partials/header.ejs %>
+     
     
-    <h1>store Show Page</h1>
-   <h2><a href="/store">Back to Index</a></h2>
-
-   <div>
+<main>
+   <div class ="showtext">
     <h3> <%= storeID.name %> </h3>
+    <hr>
+  <div class ="container">
     <img src="<%= storeID.img%>">
+    
+                      <!-- butttons -->
+                      <div class ="buttons">
+                        
+                        <!-- buy -->
+                    <form action="/store/<%= storeID.id%>/buy?_method=PUT" method="POST">
+                      <input class="btn showb" type="submit" value="BUY"/> 
+                      <!-- Edit button -->
+                     <a href="/store/<%= storeID.id %>/edit">
+                      <button type="button" class="btn showb ">
+                      Edit
+                    </button>
+                    </a>
+                    </form>
+                    
+                        <form action ="/store/<%= storeID.id%>?_method=DELETE" method="POST">
+                          <input class="btn showb " type="submit" value="DELETE"/>
+                        
+                     </form>
+                    </div>
 
-    <h3>Description: <%=storeID.description%></h3>
-    <h4>Price : <%=storeID.price%></h4>
-    <h4>Total : <%=storeID.qty%></h4>
+ </div>
+         
+ <hr>
+ <h4 class = "price">Price : <%=storeID.price%></h4>
+    <h4 class ="Totals"> Qty : <%=storeID.qty%></h4>
+    <h3 class= "description">Description: <%=storeID.description%></h3>
   </div>
 
+</main>
+                        
 
 
-
-   
-    
-    <form action="/store/<%= storeID.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="DELETE"/>
-      </form>
-
-
-   
-        <a href="/store/<%= storeID.id %>/edit">Edit</a>
-
-<!-- buy -->
-
-      <form action="/store/<%= storeID.id%>/buy?_method=PUT" method="POST">
-              <input type="submit" value="BUY"/>
-</form>
-
-
-      
-
-
-      
-
-
-       
-  </body>
-</html>
-    
 </body>
 </html>
+ 
+</body>
+</html>
+                          
+                          
+                          
+                          
+
+
+
+
+
+
+
+      
+
+
+      
+
+

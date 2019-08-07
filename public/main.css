@@ -8,10 +8,7 @@
 nav a {
     color: black;
     margin: 25px;
-     
-
-    
-}
+  }
 /* this is the navbar spacing in it */
 nav .navbar-brand {
  font-size: 1.25rem;
@@ -30,7 +27,7 @@ nav h1 {
 
 /* this grabs the background */
 body {
-    background-color:rosybrown;
+    background-color: #fBEAEB;
 }
 
 /* this grabs the card */
@@ -85,15 +82,21 @@ font-size: 20px;
       height: 400px;
       
   }
-
-header {
+  
+  header {
+    
     background-image: url("https://uploads.dailyvanity.sg/wp-content/uploads/2018/05/hair-commercial-ads-1.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
     height: 400px; 
+   
 }
   
   .navbar {
-        background-color: rgba(49, 175, 184, 0.123);
+        background-color: rgba(123, 39, 192, 0.123);
        
     
   }
@@ -103,4 +106,9 @@ header {
 padding: 30px;
 width: 100%;
 
+  }
+  li{
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
   }

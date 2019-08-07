@@ -10,7 +10,7 @@ router.get('/seed', async (req, res) => {
     const newProducts =
       [
         {
-          name: 'Manuka Honey & Yogurt HYDRATE + REPAIR PROTEIN-STRONG TREATMENT 8OZ',
+          name: 'Manuka Honey & Yogurt Hydrate + Repair Protein-Strong Treatment 8OZ',
           description: 'a nutrientrich strengthening cream to naturally reinforce and revitalize over-processed, abused hair fibers. Certified organic Shea Butter, ultra-moisturizing Manuka Honey and Yogurt in a deep conditioning formula that fortifies weak strands.',
           img: 'https://www.sheamoisture.com/dw/image/v2/BDFL_PRD/on/demandware.static/-/Sites-sundial-master-catalog/default/dwc3e2c497/large/sheamoisture/764302231479_image%204.jpg?sw=560&sh=560&sm=cut',
           price: 5,
@@ -22,7 +22,7 @@ router.get('/seed', async (req, res) => {
           price: 10.99,
           qty: 100
         }, {
-          name: 'YUCCA & PLANTAIN ANTI-BREAKAGE STRENGTHENING SHAMPOO',
+          name: 'Yucca & Plantain Anti-Breakage Strengthening Shampoo',
           description: 'Sulfate free shampoo, Smooths hair cuticles to reduce frizz and improve split ends. Certified organic shea butter, Plantainnd yucca combined. Boabab Oil and Cilantro extract help refresh and boost shine',
           img: 'https://www.sheamoisture.com/dw/image/v2/BDFL_PRD/on/demandware.static/-/Sites-sundial-master-catalog/default/dw0d75b901/large/sheamoisture/764302210207_image%201.jpg?sw=560&sh=560&sm=cut',
           price: 10.99,
@@ -37,24 +37,6 @@ router.get('/seed', async (req, res) => {
       res.send(err.message)
     }
   })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -90,6 +72,7 @@ router.get('/:id', (req, res)=>{
 router.get('/:id/edit', (req, res) => {
    
     Product.findById(req.params.id, (err, editStore ) => {
+        console.log(editStore)
     res.render( 'edit.ejs', { 
         Product: editStore, 
        

@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hair organic</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Rock+Salt|Rubik+Mono+One|Saira+Stencil+One&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href= "../main.css">
-
+    
+    <% include ./partials/head.ejs %>
 </head>
 <body>
-    <header>
-     
-        <nav class="navbar navbar-dark  ">
-            
-            <h1>OG</h1>
-            
-            <a href="/Store/new"> 
-                <button 
-                type="button" class="navbar-brand mb-0 h1  btn btn-secondary">
-                Add product!
-                
-            </button>
-        </a>
-        
-    </nav>
-</header>
-
+    <% include ./partials/header.ejs %>
+    
     <main>
         <% for (let i = 0; i < storeKey.length; i++){%>
             <div class="card mt-5"> 
@@ -37,6 +16,7 @@
             </div>
            
         <%}%>
+        
     </main>
     
     <article>
