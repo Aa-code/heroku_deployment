@@ -47,7 +47,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
 //heroku
 
 
-app.get('/', () => res.redirect('/store'))
+app.get('/', (req,res) => res.redirect('/store'))
 
 
 
