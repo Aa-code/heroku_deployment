@@ -13,8 +13,8 @@ router.get('/seed', async (req, res) => {
           name: 'Manuka Honey & Yogurt Hydrate + Repair Protein-Strong Treatment 8OZ',
           description: 'a nutrientrich strengthening cream to naturally reinforce and revitalize over-processed, abused hair fibers. Certified organic Shea Butter, ultra-moisturizing Manuka Honey and Yogurt in a deep conditioning formula that fortifies weak strands.',
           img: 'https://www.sheamoisture.com/dw/image/v2/BDFL_PRD/on/demandware.static/-/Sites-sundial-master-catalog/default/dwc3e2c497/large/sheamoisture/764302231479_image%204.jpg?sw=560&sh=560&sm=cut',
-          price: 5,
-          qty: 11.99
+          price: 10.99,
+          qty: 30
         }, {
           name: 'SheaMoisture coconut & Hibisus Curl and Shine Shampoo',
           description: 'Sulfate free hair product combines hand picked natural ingridents and certified organic Shea butter to create a gentle cleanser which improves hair health! This is perfect for those with curly hair and want to regain their natural bounce!.',

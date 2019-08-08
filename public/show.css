@@ -16,18 +16,18 @@ main img{
      display: flex;
      padding: 25px;
    }
-   .showb {
+ .showb {
        background-color: #2F3C7E;
        color: rgb(250, 220, 220);
        margin-left: 20px;
        padding:15px;
    }
 
-   .price{
+ .price{
        color: #2F3C7E;
        font-family: 'Noto Serif', serif;
        font-size: 23px;
-   }
+   }  
    .Totals {
        color: #2F3C7E;
        font-family:  'Noto Serif', serif;
@@ -47,20 +47,19 @@ main img{
               font-size: 30px;
           }
 
- 
-          .progress {
+   .progress {
             height: 40px;
             margin-left: 40px;     
               }
-              h5 {
-                   font-size: 30px;
-              }
-              h4 {
-                color: #2F3C7E;
-                font-family:'Noto Serif',serif;
-                text-align: center;
-                padding: 30px;
-                font-size: 20px;
+  h5 {
+   font-size: 30px;
+     }
+  h4 {
+  color: #2F3C7E;
+font-family:'Noto Serif',serif;
+text-align: center;
+padding: 30px;
+font-size: 20px;
 
-              }
+  }
    

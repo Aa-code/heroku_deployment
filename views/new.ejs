@@ -2,34 +2,39 @@
 <html lang="en">
 <head>
         <% include ./partials/head.ejs %>
+        <link rel = "stylesheet" href= "../new.css">
 </head>
 <body>
         <% include ./partials/header.ejs %>
         
-    <h1>Share your product</h1>
-    <form action="/store" method="POST">
+    <h1><strong> Share your product </strong></h1>
+    <hr>
 
-    <label for="name">name</label>
 
-    <input type="text" name="name" id=“name” />
+    <form class="needs-validation" novalidate action="/store" method="POST">
+        <div class="form-row">
+        <div class="col-md-4 mb-3">
+        <label for="name">Name ~ </label>
 
-    <label for="price"> Price</label>
+    <input type="text" name="name" class="form-control" id=“name” />
 
-    <input type="text" name="price" id="price">
+    <label for="price"> Price ~ </label>
 
-    <label for="img">Image</label>
+    <input type="text" name="price" class="form-control" id="price">
 
-    <input type="text" name="img" id="img">
+    <label for="img">Image ~ </label>
 
-    <label for="description">Description</label>
+    <input type="text" name="img"  class="form-control" id="img">
 
-    <input type="text" name="description" id="description">
+    <label for="description">Description ~ </label>
+
+    <input type="text" name="description" class="form-control" id="description">
     
-    <label for="qty">Total</label>
+    <label for="qty"> In Stock ~ </label>
 
-    <input type="text" name="qty" id="qty">
+    <input type="text" name="qty" class="form-control" id="qty">
    
-    <input type="submit"  value="Add item"/>
+    <input class="btn sub" type="submit"  value="Add item"/>
      </form>
     
 </body>
