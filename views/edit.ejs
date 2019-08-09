@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-           <link href="../public/edit.css">
+    <head> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <% include ./partials/head.ejs %>
+
+          
         
     </head>
     <body>
+        <% include ./partials/header.ejs %>
             
         
         <h1>Make changes!</h1>
+       
+
+
+
         
         <form action="/store/<%=Product.id%>?_method=PUT" method="POST">
-            
-    		Name: <input type="text" name="name" value="<%=Product.name%>"/><br/>
-            price: <input type="text" name="price" value="<%=Product.price%>"/><br/>
-            Description<input type="text" name="description" value="<%=Product.description%>"/><br/>
-            qty: <input type="text" name="qty" value="<%=Product.qty%>"/><br/>
-            Add Image: <input type="text" name="img" value="<%=Product.img%>"/><br/>
+            <div class="form-row ">
+                <div class="col-md-4 mb-3 ">
+                    <div class="form-group">  
+            Name: <input type="text"   class="form-control" name="name" value="<%=Product.name%>"/><br/> </div>
+            <div class="form-group">  
+            price: <input type="text" name="price"  class="form-control" value="<%=Product.price%>"/><br/></div>
+            <div class="form-group">  
+            Description<input type="text" name="description" class="form-control" value="<%=Product.description%>"/><br/></div>
+            <div class="form-group">  
+            qty: <input type="text" name="qty" class="form-control" value="<%=Product.qty%>"/><br/></div>
+            <div class="form-group">  
+            Add Image: <input type="text" name="img" class="form-control" value="<%=Product.img%>"/><br/><div>
             <input type="submit" name="" value="Submit Changes"/>
             <h2><a href="/store"> Home</a></h2>
+
         </form>
+  
     </body>
 </html>
