@@ -1,20 +1,24 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <meta charset="utf-8">
-        <title></title>
+           <link href="../public/edit.css">
+        
     </head>
     <body>
-        <h1>Edit store Page</h1>
-        <h2><a href="/store">Back to Index</a></h2>
+            
+        
+        <h1>Make changes!</h1>
+        
         <form action="/store/<%=Product.id%>?_method=PUT" method="POST">
-    	
+            
     		Name: <input type="text" name="name" value="<%=Product.name%>"/><br/>
             price: <input type="text" name="price" value="<%=Product.price%>"/><br/>
             Description<input type="text" name="description" value="<%=Product.description%>"/><br/>
-            qty: <input type="text" name="qty" value="<%=Product.qty%>"/> <br/>
+            qty: <input type="text" name="qty" value="<%=Product.qty%>"/><br/>
             Add Image: <input type="text" name="img" value="<%=Product.img%>"/><br/>
             <input type="submit" name="" value="Submit Changes"/>
+            <h2><a href="/store"> Home</a></h2>
         </form>
     </body>
 </html>

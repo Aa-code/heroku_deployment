@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
 <head>
         <% include ./partials/head.ejs %>
         <link rel = "stylesheet" href= "../new.css">
@@ -7,35 +8,39 @@
 <body>
         <% include ./partials/header.ejs %>
         
-    <h1><strong> Share your product </strong></h1>
+    <h1> Share your product </h1>
+
     <hr>
 
-
-    <form class="needs-validation" novalidate action="/store" method="POST">
-        <div class="form-row">
-        <div class="col-md-4 mb-3">
-        <label for="name">Name ~ </label>
+   
+   
+    <form class="needs-validation " novalidate action="/store" method="POST">
+        <div class="form-row ">
+         
+        <div class="col-md-4 mb-3 ">
+        <label for="name">Name </label>
 
     <input type="text" name="name" class="form-control" id=“name” />
 
-    <label for="price"> Price ~ </label>
+    <label for="price"> Price  </label>
 
     <input type="text" name="price" class="form-control" id="price">
 
-    <label for="img">Image ~ </label>
+    <label for="img">  Insert Image  </label>
 
     <input type="text" name="img"  class="form-control" id="img">
 
-    <label for="description">Description ~ </label>
+    <label for="description">Description  </label>
 
-    <input type="text" name="description" class="form-control" id="description">
+        <textarea type="text" name="description" class="form-control " id="description"> </textarea>
     
-    <label for="qty"> In Stock ~ </label>
+    <label for="qty"> In Stock  </label>
 
     <input type="text" name="qty" class="form-control" id="qty">
    
-    <input class="btn sub" type="submit"  value="Add item"/>
+    <input class="btn sub"  type="submit"   value="Add item"/>
+  
      </form>
-    
+
 </body>
-</html>
+</html> 

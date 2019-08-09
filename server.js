@@ -17,6 +17,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: false}))
 app.use(methodOverride('_method'));
 app.use('/store', storeController)
+
 //___________________
 //Port
 //___________________

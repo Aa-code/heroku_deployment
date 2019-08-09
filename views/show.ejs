@@ -11,30 +11,29 @@
     
 <main>
    <div class ="showtext">
-    <h3> <%= storeID.name %> </h3>
+    <h3><%= storeID.name %></h3>
     <hr>
   <div class ="container">
-    <img src="<%= storeID.img%>">
+ <img src="<%= storeID.img%>">
     
-                      <!-- butttons -->
-                      <div class ="buttons">
-                        
-                        <!-- buy -->
-                    <form action="/store/<%= storeID.id%>/buy?_method=PUT" method="POST">
-                      <input class="btn showb" type="submit" value="BUY"/> 
-                      <!-- Edit button -->
-                     <a href="/store/<%= storeID.id %>/edit">
-                      <button type="button" class="btn showb ">
-                      Edit
-                    </button>
-                    </a>
-                    </form>
+
+<div class ="buttons">
+                     
+ <form action="/store/<%= storeID.id%>/buy?_method=PUT" method="POST">
+ <input class="btn showb" type="submit" value="BUY"/> 
+                      
+  <a href="/store/<%= storeID.id %>/edit">
+  <button type="button" class="btn showb ">
+   Edit
+   </button>
+   </a>
+    </form>
                     
-                        <form action ="/store/<%= storeID.id%>?_method=DELETE" method="POST">
-                          <input class="btn showb " type="submit" value="DELETE"/>
+   <form action ="/store/<%= storeID.id%>?_method=DELETE" method="POST">
+    <input class="btn showb " type="submit" value="DELETE"/>
                         
-                     </form>
-                    </div>
+   </form>
+    </div>
 
  </div>
          

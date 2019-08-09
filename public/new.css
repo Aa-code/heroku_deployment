@@ -1,7 +1,32 @@
 .sub {
  color: #fec2fe;
  background-color: #2F3C7E;
- display: flex;
- 
- padding: 10px;
+ margin-left: 200px;
+ margin-top: 20px;
+ padding: 12px;
+ font-size: 25px;
 }
+h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+label {
+    font-size: 30px;
+   
+   
+   }
+   .form-row   {
+       display: flex;
+       justify-content: center;
+      
+   }
+   
+   hr { display: block; height: 2px;
+    border: 0; border-top: 2px solid #ccc;
+    margin: 1em 0; padding: 0; }
+
+  
+  
