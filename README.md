@@ -5,5 +5,5 @@
 
 # This project contains  MongoDB, Javascript, HTML and CSS, Node.js Also my first time using bootstrap which was a challenge.
 
-<img src="https://ga-students.slack.com/files/UKPF3UH0E/FM6S65UGL/screen_shot_2019-08-09_at_2.40.58_am.png">
+<img src="https://ga-students.slack.com/files/UKPF3UH0E/FM6S65UGL/screen_shot_2019-08-09_at_2.40.58_am.png" width: 200px>
 
